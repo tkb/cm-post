@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Share of Global Under Five Deaths by Region</title>
+  
+  <script type='text/javascript' src='jquery-1.9.1.js'></script>
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type='text/css'>
+    
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'area'
+            },
+            title: {
+                text: 'Share of global under-five deaths by region'
+            },
+            xAxis: {
+                labels: {
+                    step: 3,
+                    staggerLines: 1
+                    },
+                categories: ['1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012'],
+               
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Percent'
+                }
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.0f})<br/>',
+                shared: true
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'percent',
+                    lineColor: '#ffffff',
+                    lineWidth: 1,
+                    marker: {
+                        enabled: false,
+                        lineWidth: 0,
+                        lineColor: '#ffffff'
+                    }
+                }
+            },
+                series: [{
+
+	name: 'High Income',	
+	data: [221000, 208000, 194000, 181000, 169000, 158000, 149000, 143000, 138000, 135000, 132000, 128000, 124000, 121000, 117000, 114000, 111000, 108000, 105000, 102000, 99000, 96000, 93000]
+    }, {
+    name: 'Europe & Central Asia',
+    data: [300000, 288000, 274000, 257000, 241000, 225000, 210000, 197000, 185000, 174000, 163000, 152000, 142000, 133000, 126000, 120000, 116000, 113000, 110000, 107000, 104000, 100000, 96000]
+
+    }, {
+    name: 'Latin America & Caribbean',  
+    data: [619000, 592000, 566000, 542000, 518000, 494000, 470000, 447000, 424000, 401000, 379000, 358000, 338000, 318000, 299000, 282000, 266000, 252000, 238000, 227000, 245000, 210000, 203000]
+    }, {
+    name: 'Middle East & North Africa', 
+    data: [511000, 485000, 459000, 433000, 410000, 389000, 370000, 353000, 336000, 320000, 305000, 290000, 276000, 263000, 252000, 243000, 236000, 231000, 226000, 222000, 217000, 213000, 209000]
+    }, {
+    name: 'East Asia & Pacific',    
+    data: [2528000, 2393000, 2190000, 1956000, 1738000, 1564000, 1433000, 1349000, 1294000, 1249000, 1193000, 1130000, 1064000, 999000, 939000, 885000, 841000, 801000, 763000, 729000, 697000, 663000, 630000]
+    }, {
+    name: 'South Asia',
+    data: [4677000,  4566000,  4436000,  4298000,  4161000,  4032000,  3915000,  3799000,  3686000,  3570000,  3448000,  3326000,  3196000,  3061000,  2932000,  2804000,  2681000,  2564000,  2450000,  2345000,  2249000,  2159000,  2082000]
+    }, {
+    name: 'Sub-Saharan Africa',
+    data: [3766000, 3818000, 3862000, 3904000, 3961000, 3992000, 4024000, 4064000, 4094000, 4094000, 4079000, 4049000, 3995000, 3927000, 3856000, 3786000, 3714000, 3633000, 3549000, 3467000, 3386000, 3312000, 3241000]
+    }]
+        });
+    });
+    
+
+//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <script src="highcharts.js"></script>
+<script src="exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 480px; margin: 0 auto"></div>
+
+  
+</body>
+
+
+</html>
+
